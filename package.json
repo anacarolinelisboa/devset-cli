@@ -1,26 +1,35 @@
 {
-  "name": "dev-environment-cli",
+  "name": "devset-cli",
   "version": "1.0.0",
   "description": "CLI for development environment automation",
   "type": "module",
   "bin": {
     "devset": "dist/index.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "tsx src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anasilva9/dev-environment-cli.git"
+    "url": "git+https://github.com/anasilva9/devset-cli.git"
   },
-  "keywords": [],
+  "keywords": [
+    "cli",
+    "vtex",
+    "devset",
+    "automation"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/anasilva9/dev-environment-cli/issues"
+    "url": "https://github.com/anasilva9/devset-cli/issues"
   },
-  "homepage": "https://github.com/anasilva9/dev-environment-cli#readme",
+  "homepage": "https://github.com/anasilva9/devset-cli#readme",
   "dependencies": {
     "@inquirer/prompts": "^8.7.2",
     "commander": "^15.0.0",
