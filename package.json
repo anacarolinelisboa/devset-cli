@@ -1,0 +1,35 @@
+{
+  "name": "dev-environment-cli",
+  "version": "1.0.0",
+  "description": "CLI for development environment automation",
+  "type": "module",
+  "bin": {
+    "devset": "dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anasilva9/dev-environment-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anasilva9/dev-environment-cli/issues"
+  },
+  "homepage": "https://github.com/anasilva9/dev-environment-cli#readme",
+  "dependencies": {
+    "@inquirer/prompts": "^8.7.2",
+    "commander": "^15.0.0",
+    "execa": "^10.2.1",
+    "inquirer": "^14.2.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
