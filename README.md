@@ -270,7 +270,7 @@ Caso o terminal não reconheça o comando `devset` após a instalação global (
 
 ```bash
 NPM_BIN="$(cygpath -u "$(npm prefix -g)")"
-echo "export PATH=\"$NPM_BIN:$NPM_BIN/bin:\$PATH\"" >> ~/.bashrc
+printf '\nexport PATH="%s:%s/bin:$PATH"\n' "$NPM_BIN" "$NPM_BIN" >> ~/.bashrc
 source ~/.bashrc
 hash -r
 ```
