@@ -261,6 +261,19 @@ devset start --help
 ```
 ___
 ## 💡Support & Feedback
+ 
+#### Troubleshooting: `devset: command not found`
+
+Caso o terminal não reconheça o comando `devset` após a instalação global (`npm install -g` ou `npm link`), a pasta de binários globais do npm precisa ser adicionada ao `PATH` do seu sistema.
+
+ Windows (Git Bash / MSYS2 / UCRT64): Esses terminais isolam as variáveis de ambiente do Windows por padrão. Rode os comandos abaixo para registrar o caminho automaticamente:
+
+```bash
+NPM_BIN="$(cygpath -u "$(npm prefix -g)")"
+echo "export PATH=\"$NPM_BIN:$NPM_BIN/bin:\$PATH\"" >> ~/.bashrc
+source ~/.bashrc
+hash -r
+```
 
 #### Do you need help or do you have any ideas to improve this CLI?
 

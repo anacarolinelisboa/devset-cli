@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anasilva9/devset-cli.git"
+    "url": "git+https://github.com/anacarolinelisboa/devset-cli.git"
   },
   "keywords": [
     "cli",
@@ -27,9 +27,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/anasilva9/devset-cli/issues"
+    "url": "https://github.com/anacarolinelisboa/devset-cli/issues"
   },
-  "homepage": "https://github.com/anasilva9/devset-cli#readme",
+  "homepage": "https://github.com/anacarolinelisboa/devset-cli#readme",
   "dependencies": {
     "@inquirer/prompts": "^8.7.2",
     "commander": "^15.0.0",
